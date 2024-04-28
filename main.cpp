@@ -8,7 +8,7 @@ int main() {
 	if ((number / 100000 % 10 + number / 10000 % 10 + number / 1000 % 10) == (number / 100 % 10 + number / 10 % 10 + number % 10)) {
 		cout << "Your number is happy";
 	}
-	else if (100000 - number > 0){
+	else if (number > 999999 || number < 100000){
 		cout << "The number you've entered isn't 6-digits";
 	}
 	else {
