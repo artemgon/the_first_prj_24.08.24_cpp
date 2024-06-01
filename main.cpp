@@ -26,13 +26,13 @@ int main() {
 		cout << "The aircraft won't fly";
 	}
 	min_fill = distance_from_B_to_C * fuel_consumption;
-	if (distance_from_A_to_B * fuel_consumption > 300) {
+	if (distance_from_A_to_B * fuel_consumption > fuel_tank_volume) {
 		cout << "The aircraft won't get to point B";
 	}
 	else if (min_fill > distance_from_A_to_B * fuel_consumption) {
 		cout << "The aircraft won't get to point C";
 	}
-	else if (300 - distance_from_A_to_B * fuel_consumption > min_fill) {
+	else if (fuel_tank_volume - distance_from_A_to_B * fuel_consumption > min_fill) {
 		cout << "The plane doesn't need a filling" << "(minimal filling = " << min_fill << ")";
 	}
 	else {
